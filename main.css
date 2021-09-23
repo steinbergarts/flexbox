@@ -1,0 +1,145 @@
+body {
+  padding-left: 230px;
+  padding-right: 230px;
+
+  background-color: black;
+  margin: 0;
+}
+
+p {
+  font-size: 24px;
+}
+
+.header {
+  width: 100%;
+  height: fit-content;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  border-radius: 20px;
+}
+
+.nav {
+  display: flex;
+  width: fit-content;
+  justify-content: space-around;
+  align-items: center;
+  height: fit-content;
+}
+
+.nav a {
+  margin-right: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-decoration: none;
+}
+
+.section {
+  background-color: rgba(245, 245, 245, 0.185);
+  color: whitesmoke;
+  padding: 20px 50px 20px 50px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.section-title {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-not-flex {
+  background-color: rgba(255, 255, 255, 0.733);
+  padding: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  border-radius: 20px;
+}
+.box-not-flex {
+  height: 120px;
+  width: 120px;
+  background-color: teal;
+  margin: 20px;
+}
+
+.container-flex {
+  background-color: rgba(255, 255, 255, 0.733);
+  padding: 20px;
+  margin: 20px 0 20px 0;
+  border-radius: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.box {
+  height: 120px;
+  width: 120px;
+  background-color: teal;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+}
+
+.flex-direction-row {
+  flex-direction: row;
+}
+
+.flex-direction-column {
+  flex-direction: column;
+}
+
+.container-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.container-header {
+  width: 100%;
+  height: fit-content;
+  background-color: rgba(255, 255, 255, 0.705);
+  color: black;
+  border-radius: 20px;
+  text-align: center;
+  margin: 20px;
+}
+
+.container-content {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container-header-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.flex-direction-column-reverse-wrapper {
+  flex-grow: 4;
+  margin-right: 20px;
+}
+
+.flex-direction-row-reverse-wrapper {
+  flex-grow: 1;
+}
+
+.flex-direction-row-reverse {
+  flex-direction: row-reverse;
+  justify-content: left;
+}
+
+.flex-direction-column-reverse {
+  flex-direction: column-reverse;
+}
