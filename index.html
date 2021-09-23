@@ -8,6 +8,8 @@
     <title>Document</title>
 </head>
 <body>
+
+<!-- Хедер та навігація -->
     <div class="header">
        <div class="nav">
           
@@ -19,18 +21,31 @@
      
     </div>
 
+<!-- Головна секція-->
+
+<div class="section">
+    <div class="section-title">
+        <h1>Flexbox</h1>
+        <p>Это новая технология, которая уже имеет достаточно широкую поддержку браузеров. Flexbox предоставляет инструменты для быстрого создания сложных, гибких макетов, и функции, которые были сложны в традиционных методах CSS. В этой статье объясняются все основы данной технологии.</p>
+    </div>
+</div>
 
     <div class="section">
 
-            <div class="section-title">
-                <h1>Flexbox</h1>
+            <div class="container-flex section-text">
+                <h2>display: flex</h2>
+                <p>Команда для запуску флекcбокс режиму</p>
             </div>
+
+
             
-            <h2>display: flex</h2>
-            <p>Команда для запуску флекcбокс режиму</p>
-            
-            <p style="font-style: italic;">5 елементів до запуску флексбосу</p>
-            <div class="container-not-flex">
+            <div class="container-flex" style="flex-direction: column;">
+
+                <div class="container-header-wrapper">
+                    <div class="container-header">
+                        <p>5 елементів до запуску флексбосу</p>
+                    </div>
+                </div>
                 <div class="box-not-flex"></div>
                 <div class="box-not-flex"></div>
                 <div class="box-not-flex"></div>
@@ -38,8 +53,18 @@
                 <div class="box-not-flex"></div>
             </div>
 
-            <p>Піля запуску флексбокс режиму</p>
+
+          
+             
+
+    
             <div class="container-flex">
+                <div class="container-header-wrapper">
+                    <div class="container-header">
+                        <p>Піля запуску флексбокс режиму</p>
+                    </div>
+                </div>
+
                 <div class="box">1</div>
                 <div class="box">2</div>
                 <div class="box">3</div>
@@ -47,8 +72,11 @@
                 <div class="box">5</div>
             </div>
 
-            <h2>flex-direction: row / flex-direction: row </h2>
+            <div class="container-flex section-text">
+                <h2>flex-direction: row / flex-direction: row </h2>
             <p>У flex-контейнера есть две оси: главная и перпендикулярная ей. По умолчанию все предметы располагаются вдоль главной оси — слева направо. Именно поэтому блоки в предыдущем примере выстроились в линию, когда мы применили display: flex. А вот flex-direction позволяет вращать главную ось. Обратите внимание, что flex-direction: column не выравнивает блоки по оси, перпендикулярной главной. Главная ось сама меняет своё расположение, и теперь направлена сверху вниз.</p>
+            </div>
+
             
             <div class="container-flex">
 
@@ -85,15 +113,18 @@
                 
             </div>
 
+
+<!-- Row/Column reverse-->
+
             <p>Есть ещё парочка свойств для flex-direction: row-reverse и column-reverse.</p>
             <div class="container-container">
                 
 
-                <div class="container-flex flex-direction-column-reverse-wrapper">
+                <div class="container-flex flex-grow-1">
 
                     <div class="container-header-wrapper">
                         <div class="container-header">
-                            <p>flex-derection: row-rewerse</p>
+                            <p>flex-derection: column-rewerse</p>
                         </div>
                     </div>
 
@@ -107,7 +138,7 @@
 
                 </div>
 
-                <div class="container-flex flex-direction-row-reverse-wrapper">
+                <div class="container-flex flex-grow-4">
 
                     <div class="container-header-wrapper">
                         <div class="container-header">
