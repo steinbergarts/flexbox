@@ -1,3 +1,5 @@
+/* Загальні налаштування */
+
 body {
   padding-left: 230px;
   padding-right: 230px;
@@ -9,6 +11,8 @@ body {
 p {
   font-size: 24px;
 }
+
+/* Хедер та навігація */
 
 .header {
   width: 100%;
@@ -29,6 +33,7 @@ p {
   justify-content: space-around;
   align-items: center;
   height: fit-content;
+  flex-wrap: wrap;
 }
 
 .nav a {
@@ -38,75 +43,34 @@ p {
   text-decoration: none;
 }
 
-.section {
-  background-color: rgba(245, 245, 245, 0.185);
-  color: whitesmoke;
-  padding: 20px 30px 20px 30px;
-  margin-bottom: 20px;
-  border-radius: 20px;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-}
-
-.section-title {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.container-not-flex {
-  background-color: rgba(255, 255, 255, 0.733);
-  padding: 20px;
-  margin: 20px 20px 20px 20px;
-
-  border-radius: 20px;
-}
-.box-not-flex {
-  height: 120px;
-  width: 120px;
-  background-color: teal;
-  margin: 20px;
-}
+/* Контейнери */
 
 .container-flex {
+  /* Базовий контейнер */
   background-color: rgba(255, 255, 255, 0.733);
   padding: 20px;
   margin: 20px 20px 20px 20px;
   border-radius: 20px;
   display: flex;
   flex-wrap: wrap;
-}
-
-.box {
-  height: 120px;
-  width: 120px;
-  background-color: teal;
-  margin: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 24px;
-}
-
-.flex-direction-row {
-  flex-direction: row;
-}
-
-.flex-direction-column {
-  flex-direction: column;
 }
 
 .container-container {
   /* Контейнер для контрейнерів (коли потрібно два в ряд */
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+}
+
+.container-header-wrapper {
+  /* Контейнер для контейнеру заголовків (для центрації у випадку потреби */
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .container-header {
+  /* Контейнер для  заголовків */
   width: 100%;
   height: fit-content;
   background-color: rgba(255, 255, 255, 0.705);
@@ -122,13 +86,62 @@ p {
   flex-wrap: wrap;
 }
 
-.container-header-wrapper {
-  width: 100%;
+/* Секції */
+
+.section {
+  background-color: rgba(245, 245, 245, 0.185);
+  color: whitesmoke;
+  padding: 20px 30px 20px 30px;
+  margin-bottom: 20px;
+  border-radius: 20px;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 
-/* Секці Direction reverse */
+/* .section-title {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+} */
+
+.section-text {
+  background-color: rgba(153, 205, 50, 0);
+  padding: 1px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  color: white;
+}
+
+.section h1 {
+  text-align: center;
+}
+/* Коробки */
+
+.box {
+  height: 120px;
+  width: 120px;
+  background-color: teal;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+}
+
+/* Налаштування */
+
+.flex-direction-row {
+  flex-direction: row;
+}
+
+.flex-direction-column {
+  flex-direction: column;
+}
 
 .flex-grow-1 {
   flex-grow: 1;
@@ -145,15 +158,4 @@ p {
 
 .flex-direction-column-reverse {
   flex-direction: column-reverse;
-}
-
-.section-text {
-  background-color: rgba(153, 205, 50, 0);
-  padding: 1px;
-
-  border-radius: 20px;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  color: white;
 }

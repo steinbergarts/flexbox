@@ -12,58 +12,56 @@
 <!-- Хедер та навігація -->
     <div class="header">
        <div class="nav">
-          
             <a href="">CSS</a>
             <a href="">FLEXBOX</a>
             <a href="">GRID</a>
             <a href="">SASS</a>
        </div>
-     
     </div>
 
 <!-- Головна секція-->
 
 <div class="section">
-    <div class="section-title">
+     <div class="container-flex section-text">
         <h1>Flexbox</h1>
         <p>Это новая технология, которая уже имеет достаточно широкую поддержку браузеров. Flexbox предоставляет инструменты для быстрого создания сложных, гибких макетов, и функции, которые были сложны в традиционных методах CSS. В этой статье объясняются все основы данной технологии.</p>
-    </div>
+     </div>
+        
 </div>
 
     <div class="section">
+<!-- Зупус флекст режиму-->
 
             <div class="container-flex section-text">
-                <h2>display: flex</h2>
+                <h1>display: flex</h1>
                 <p>Команда для запуску флекcбокс режиму</p>
             </div>
 
 
             
             <div class="container-flex" style="flex-direction: column;">
+<div class="container-header-wrapper">
+    <div class="container-header">
+        <p>5 елементів до запуску флексбосу</p>
+    </div>
+</div>
+           
+         
 
-                <div class="container-header-wrapper">
-                    <div class="container-header">
-                        <p>5 елементів до запуску флексбосу</p>
-                    </div>
-                </div>
-                <div class="box-not-flex"></div>
-                <div class="box-not-flex"></div>
-                <div class="box-not-flex"></div>
-                <div class="box-not-flex"></div>
-                <div class="box-not-flex"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
             </div>
-
-
-          
-             
 
     
             <div class="container-flex">
-                <div class="container-header-wrapper">
+        
                     <div class="container-header">
                         <p>Піля запуску флексбокс режиму</p>
                     </div>
-                </div>
+    
 
                 <div class="box">1</div>
                 <div class="box">2</div>
@@ -71,20 +69,23 @@
                 <div class="box">4</div>
                 <div class="box">5</div>
             </div>
+    </div>
+            <div class="section">
+ <!-- Флекс дірекшен-->           
 
             <div class="container-flex section-text">
-                <h2>flex-direction: row / flex-direction: row </h2>
+                <h1>flex-direction: row / flex-direction: row </h1>
             <p>У flex-контейнера есть две оси: главная и перпендикулярная ей. По умолчанию все предметы располагаются вдоль главной оси — слева направо. Именно поэтому блоки в предыдущем примере выстроились в линию, когда мы применили display: flex. А вот flex-direction позволяет вращать главную ось. Обратите внимание, что flex-direction: column не выравнивает блоки по оси, перпендикулярной главной. Главная ось сама меняет своё расположение, и теперь направлена сверху вниз.</p>
             </div>
 
             
             <div class="container-flex">
 
-                <div class="container-header-wrapper">
+              
                     <div class="container-header">
                         <p>flex-direction: row</p>
                     </div>
-                </div>
+
 
 
                 <div class="container-content flex-direction-row">
@@ -99,9 +100,13 @@
 
            
             <div class="container-flex">
-                <div class="container-header">
-                    <p>flex-direction: column</p>
+
+                <div class="container-header-wrapper">
+                    <div class="container-header">
+                        <p>flex-direction: column</p>
+                    </div>
                 </div>
+                
 
                 <div class="container-content flex-direction-column">
                     <div class="box">1</div>
@@ -116,17 +121,18 @@
 
 <!-- Row/Column reverse-->
 
-            <p>Есть ещё парочка свойств для flex-direction: row-reverse и column-reverse.</p>
+    <div class="container-flex section-text">
+        <p>Есть ещё парочка свойств для flex-direction: row-reverse и column-reverse.</p>
+    </div>
+            
             <div class="container-container">
-                
-
                 <div class="container-flex flex-grow-1">
 
-                    <div class="container-header-wrapper">
+                    <!-- <div class="container-header-wrapper"> -->
                         <div class="container-header">
                             <p>flex-derection: column-rewerse</p>
                         </div>
-                    </div>
+                    <!-- </div> -->
 
                     <div class="container-content flex-direction-column-reverse">
                         <div class="box">1</div>
@@ -156,11 +162,136 @@
                 </div>
 
             </div>
+        </div>
 
-              
-            <h2>flex-grow</h2>
-                <h2>flex-wrap</h2>
+
+        <div class="section">
+            <div class="container-flex section-text">
+                <h1>flex-grow
+                </h1> 
+                <p>
+                    CSS-свойство flex-grow определяет как много свободного пространства во flex-контейнере должно быть назначено текущему элементу (flex grow factor — «коэффициент увеличения flex»). Свободное пространство — разница между размером flex-контейнера и размером всех его flex-элементов вместе. Если все sibling-элементы (sibling items — элементы одного уровня вложенности, состоящие по отношению друг к другу в родственной связи как брат или сестра), имеют одинаковый коэффициент flex-grow, то все они получат одинаковую долю свободного пространства, в противном случае оно распределяется в соответствии с соотношением, определённым различными коэффициентами flex-grow.
+
+На практике flex-grow используется вместе с другими flex-свойствами flex-shrink и flex-basis, и обычно определяется с помощью сокращения (shorthand) flex, чтобы убедиться, что все значения заданы.
+                </p>
+            </div>
+
+              <div class="container-flex">
+
+                  <div class="container-header">
+                      <p>flex-grow</p>
+                  </div>
+
+
+                  <div class="container-content">
+                    <div class="box">1</div>
+                    <div class="box" style="flex-grow: 2;">2</div>
+                    <div class="box">3</div>
+                    <div class="box">4</div>
+                    <div class="box">5</div>
+                </div>
+
+
+              </div>
+
+        </div>
+
+        <div class="section"> 
+
+
+            <div class="container-flex section-text">
+                <h1>flex-wrap</h1>
                 <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/flex-wrap?retiredLocale=uk"></a>
+                <p>Свойство CSS flex-wrap задаёт правила вывода flex-элементов —  в одну строку или в несколько, с переносом блоков. Если перенос разрешён, то возможно задать направление, в котором выводятся блоки.</p>
+                <p>Якщо врап увімкнено то блоки будуть переноситися, якщо ні - блоки будуть стискатись</p>
+            </div>
+
+            <div class="container-container">
+
+                <div class="container-flex">
+
+                  
+                        <div class="container-header">
+                            <p>flex-wrap: no-wrap (вимкнено)</p>
+                        </div>
+                
+
+
+                    <div class="container-content" style="flex-wrap: nowrap; width: 500px;">
+                        <div class="box">1</div>
+                        <div class="box">2</div>
+                        <div class="box">3</div>
+                        <div class="box">4</div>
+                        <div class="box">5</div>
+                </div>
+                </div>
+                <div class="container-flex">
+
+                   
+                        <div class="container-header">
+                            <p>flex-wrap: wrap (увімкнено)</p>
+                        </div>
+                       
+
+                    <div class="container-content" style="width: 500px;">
+                        <div class="box">1</div>
+                        <div class="box">2</div>
+                        <div class="box">3</div>
+                        <div class="box">4</div>
+                        <div class="box">5</div>
+                </div>
+                </div>
+            </div>
+
+        </div>
+                <div class="section">
+                    <div class="container-flex section-text">
+                        <h1>Position</h1>
+                    </div>
+
+                    <div class="container-flex">
+                        <div class="container-header-wrapper">
+                            <div class="container-header">
+                                <p>Static</p>
+                            </div>
+                        </div>
+
+                        <p>Базове поводження елементів</p>
+                        <div class="container-content">
+                            <div class="box">1</div>
+                            <div class="box">2</div>
+                            <div class="box">3</div>
+                            <div class="box">4</div>
+                            <div class="box">5</div>
+                    </div>
+                    </div>
+
+                    
+                    <div class="container-flex">
+                        <div class="container-header-wrapper">
+                            <div class="container-header">
+                                <p>relative</p>
+                            </div>
+                        </div>
+
+                        <div class="container-content">
+                            <div class="box">1</div>
+                            <div class="box">2</div>
+                            <div class="box">3</div>
+                            <div class="box">4</div>
+                            <div class="box">5</div>
+                    </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+        </div>
+            
+           
+                
 
         
     </div>
